@@ -1,0 +1,18 @@
+name: stat_201_proj
+channels:
+  - r
+  - conda-forge
+dependencies:
+  - python=3.7
+  - r-environment
+  - r-essentials
+  - r-base
+  - r-tidyverse
+  - r-ggplot2
+  - r-plotly
+  - r-cowplot
+  - r-infer
+  - jupyter-book
+
+
+
