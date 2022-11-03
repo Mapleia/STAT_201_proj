@@ -49,7 +49,7 @@ Kaede
 * Possible escalation to prof
 
 ## Signatures
-Alp Tutar
-Andrew Levner
-Kaede Ito
-Akash Raut
+* Alp Tutar
+* Andrew Levner
+* Kaede Ito
+* Akash Raut

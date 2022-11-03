@@ -1,0 +1,8 @@
+format: jb-book
+root: README
+chapters:
+- file: project_docs/contract.md
+- file: src/Introduction
+  sections:
+  - file: src/Preliminary_Results
+  - file: src/Methods

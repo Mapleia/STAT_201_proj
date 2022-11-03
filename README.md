@@ -1,4 +1,5 @@
-# STAT_201 Group 19 Project
+# Overview
+Welcome to the Jupyter Notebook for the research project.
 
 | Milestones          | Deadline         | Who is submitting? |
 | ------------------- | ---------------- | ------------------ |
@@ -19,23 +20,20 @@
 
 * [Group Contract](https://docs.google.com/document/d/1oAqF9jbTbj9C6QhEW-NYKRDmF-C4MRixj4sham7cDfs/edit?usp=sharing)
 
-
-
 # Install and Environment Setup
 ## Recommended: Anaconda (Miniconda)
 1. [Install Anaconda](https://docs.anaconda.com/anaconda/install/index.html), a Python environment manager. You can also install Miniconda (a miniature version of Anaconda without all the bells and whistles.)
+
+> Remember to run `conda init` after install.
 
 2. Setup with:
   ```sh
     conda env create --no-default-packages -f src/conda_env.yml
   ```
 
-  > This uses `v3.7 Python` and `R` due to an dependency error for Python >=v3.8. Read more about the issue [here](https://github.com/executablebooks/jupyter-book/issues/906).
-
 3. Activate the notebook env and run the kernel.
   ```sh
     conda activate stat_201_proj
-    cd src
     jupyter notebook
   ```
 
