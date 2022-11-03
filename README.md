@@ -39,3 +39,14 @@ Welcome to the Jupyter Notebook for the research project.
 
 4. Edit the notebook in the browser (or your jupyter supported editor/IDE) as you please!
 
+## Publish Online to GitHub Pages
+### Following [this tutorial](https://jupyterbook.org/publish/gh-pages.html):
+
+Run these steps after every major update to publish the changes.
+
+1. In a terminal (with the conda environment activated), move to the notebook directory.
+    ```
+    cd C:/ABSOLUTE/PATH/TO/PROJECT/ROOT/FOLDER
+    ```
+2. Run `jupyter-book build .`.
+3. Run `ghp-import -n -p -f _build/html` .

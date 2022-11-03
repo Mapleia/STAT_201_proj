@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=3.10
   - jupyter-book
+  - ghp-import
   - r-base
   - r-tidyverse
   - r-tidymodels
