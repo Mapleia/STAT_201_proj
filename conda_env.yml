@@ -12,4 +12,5 @@ dependencies:
   - r-cowplot
   - r-infer
   - r-irkernel
+  - r-ggally
   - nb_conda_kernels
