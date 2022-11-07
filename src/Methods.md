@@ -34,4 +34,4 @@ The results from this project could signify to bodies that care about wildfires 
 ### More Research Needed
 Is it understandable that wind speed is a relatively easy attribute to measure for wind, thus an attractive variable to depend upon for simplistic models.
 
-Our research could point for the need for new comprehensive methods of measuring other wind properties, which presumably would be better at predicting area burned. It could also raise to questions whether or not the wind speed is truly is the one of the most significant factors for accurate predictive models, or whether the forest environment has other behaviours that contribute significantly to the severity of these events.
+Our research could point for the need for new comprehensive methods of measuring other wind properties, which presumably would be better at predicting area burned. It could also raise questions as to whether or not the wind speed is truly one of the most significant factors for accurate predictive models, or whether the forest environment has other behaviours that contribute significantly to the severity of these events.
