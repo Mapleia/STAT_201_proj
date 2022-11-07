@@ -483,7 +483,6 @@ title="Print to PDF"
 <span class="c1"># add category column</span>
 <span class="n">forest_fires_data</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
     <span class="nf">mutate</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="nf">cut</span><span class="p">(</span><span class="n">wind</span><span class="p">,</span> <span class="n">breaks</span><span class="o">=</span><span class="n">xs</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;low&quot;</span><span class="p">,</span><span class="s">&quot;high&quot;</span><span class="p">),</span><span class="n">include.lowest</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span>
-<span class="nf">head</span><span class="p">(</span><span class="n">forest_fires_data</span><span class="p">)</span>
 
 <span class="n">wind_plot_categorized</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
     <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">wind</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span><span class="o">+</span>
@@ -506,22 +505,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table class="dataframe">
-<caption>A tibble: 6 × 3</caption>
-<thead>
-	<tr><th scope=col>wind</th><th scope=col>area</th><th scope=col>category</th></tr>
-	<tr><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;fct&gt;</th></tr>
-</thead>
-<tbody>
-	<tr><td>6.7</td><td>0</td><td>high</td></tr>
-	<tr><td>0.9</td><td>0</td><td>low </td></tr>
-	<tr><td>1.3</td><td>0</td><td>low </td></tr>
-	<tr><td>4.0</td><td>0</td><td>low </td></tr>
-	<tr><td>1.8</td><td>0</td><td>low </td></tr>
-	<tr><td>5.4</td><td>0</td><td>high</td></tr>
-</tbody>
-</table>
-</div><img alt="../_images/Preliminary_Results_8_1.png" src="../_images/Preliminary_Results_8_1.png" />
+<img alt="../_images/Preliminary_Results_8_0.png" src="../_images/Preliminary_Results_8_0.png" />
 </div>
 </div>
 <p>Based on Figure 3, there is a considerable difference in wind speed. A confidence interval would be useful to see if their ranges overlap in a interesting manner. We could also have a confidence interval around the difference of the mean.</p>
@@ -576,7 +560,7 @@ title="Print to PDF"
   <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">category</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">area_log10</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span> <span class="o">+</span>
   <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
   <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Scaled Area vs Wind Speed Category&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Scaled Area Burned (ha)&quot;</span><span class="p">)</span><span class="o">+</span>
-  <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 6: Boxplot of Wind Speed by Category&quot;</span><span class="p">)</span>
+  <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 6: Boxplot of Area Burned by Category&quot;</span><span class="p">)</span>
 
 <span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">12</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 <span class="nf">plot_grid</span><span class="p">(</span><span class="n">area_burned_scaled_plot</span><span class="p">,</span> <span class="n">box_plot_burned</span><span class="p">)</span>
