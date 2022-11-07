@@ -115,7 +115,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="src/Introduction.html">
-   Introductions
+   Proposal
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -134,6 +134,11 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="src/Work_Referenced.html">
+   Works Referenced
+  </a>
  </li>
 </ul>
 
@@ -445,26 +450,23 @@ title="Print to PDF"
 <h1>Install and Environment Setup<a class="headerlink" href="#install-and-environment-setup" title="Permalink to this headline">#</a></h1>
 <section id="recommended-anaconda-miniconda">
 <h2>Recommended: Anaconda (Miniconda)<a class="headerlink" href="#recommended-anaconda-miniconda" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/index.html">Install Anaconda</a>, a Python environment manager. You can also install Miniconda (a miniature version of Anaconda without all the bells and whistles.)</p></li>
-</ol>
+<ol>
+<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/index.html">Install Anaconda</a>, a Python environment manager. You can also install Miniconda (a miniature version of Anaconda without all the bells and whistles.)</p>
 <blockquote>
 <div><p>Remember to run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code> after install.</p>
 </div></blockquote>
-<ol class="simple">
-<li><p>Setup with:</p></li>
-</ol>
+</li>
+<li><p>Setup with:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>  conda env create --no-default-packages -f src/conda_env.yml
 </pre></div>
 </div>
-<ol class="simple">
-<li><p>Activate the notebook env and run the kernel.</p></li>
-</ol>
+</li>
+<li><p>Activate the notebook env and run the kernel.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>  conda activate stat_201_proj
   jupyter notebook
 </pre></div>
 </div>
-<ol class="simple">
+</li>
 <li><p>Edit the notebook in the browser (or your jupyter supported editor/IDE) as you please!</p></li>
 </ol>
 </section>
@@ -479,8 +481,8 @@ title="Print to PDF"
 </pre></div>
 </div>
 </li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">.</span></code>.</p></li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code> .</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">.</span></code></p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code></p></li>
 </ol>
 </section>
 </section>

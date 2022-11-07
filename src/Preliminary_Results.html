@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Method Plan" href="Methods.html" />
-    <link rel="prev" title="Introductions" href="Introduction.html" />
+    <link rel="prev" title="Proposal" href="Introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Introduction.html">
-   Introductions
+   Proposal
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -135,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Work_Referenced.html">
+   Works Referenced
+  </a>
  </li>
 </ul>
 
@@ -424,9 +429,14 @@ title="Print to PDF"
 
 <span class="c1">#Dowloading the data from the web and reading it in R.</span>
 <span class="n">url</span> <span class="o">&lt;-</span> <span class="s">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/forestfires.csv&quot;</span>
-<span class="nf">download.file </span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="s">&quot;../data/forestfires.csv&quot;</span> <span class="p">)</span>
 
-<span class="n">forest_fires_data</span> <span class="o">&lt;-</span><span class="nf">read_delim</span><span class="p">(</span><span class="s">&quot;../data/forestfires.csv&quot;</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">0</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+<span class="n">filepath</span> <span class="o">&lt;-</span> <span class="s">&quot;../data/forestfires.csv&quot;</span>
+
+<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">file.exists</span><span class="p">(</span><span class="n">filepath</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">filepath</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">forest_fires_data</span> <span class="o">&lt;-</span><span class="nf">read_delim</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">0</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
     <span class="nf">select</span><span class="p">(</span><span class="n">wind</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span> <span class="o">%&gt;%</span>
     <span class="nf">mutate</span><span class="p">(</span><span class="n">wind</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">wind</span><span class="p">),</span> <span class="n">area</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">area</span><span class="p">))</span> <span class="o">%&gt;%</span> <span class="c1">#Wrangling data and selecting columns to be used in prediction</span>
     <span class="nf">filter</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">wind</span><span class="p">)</span> <span class="o">|</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">area</span><span class="p">))</span>
@@ -643,7 +653,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introductions</p>
+            <p class="prev-next-title">Proposal</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Methods.html" title="next page">

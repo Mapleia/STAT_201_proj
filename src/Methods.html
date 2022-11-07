@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Works Referenced" href="Work_Referenced.html" />
     <link rel="prev" title="Preliminary Results" href="Preliminary_Results.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -115,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Introduction.html">
-   Introductions
+   Proposal
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -134,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Work_Referenced.html">
+   Works Referenced
+  </a>
  </li>
 </ul>
 
@@ -186,35 +192,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/Mapleia/stat_201_proj/main?urlpath=tree/src/Methods.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -250,7 +227,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/src/Methods.ipynb"
+        <a href="../_sources/src/Methods.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -261,7 +238,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="headerbtn__text-container">.md</span>
 </a>
 
       </li>
@@ -400,15 +377,15 @@ title="Print to PDF"
 <li><p>the dataset is quite large, encompassing over 500 data points</p></li>
 <li><p>All the N/A values are removed from the dataset and the response variable is transformed using a log function to have a less skewed distribution.</p>
 <ul>
-<li><p>to account for the data points where the area burned was 0, we uniformly added 1 to every data point so that the differences between the data points are retained</p></li>
+<li><p>to account for the data points where the area burned was 0, we uniformly added 1 to every data point so that the differences between the data points were retained</p></li>
 </ul>
 </li>
 </ul>
 <p>In relation to research question, our null hypothesis states that we will not see a difference in the area burned between the two wind speed categories.</p>
 <section id="is-it-enough">
 <h2>Is it enough?<a class="headerlink" href="#is-it-enough" title="Permalink to this headline">#</a></h2>
-<p>The preliminary results seen seem to suggest that there may not be considerable differences in area burned when wind is categorized as high or low.</p>
-<p>However, the plots we produced are not enough to come to a conclusion because we do not know the significance we see in the differences in the area burned in the 2 different categories. To be able to confidently say if the results we see from the data significantly differenciates from the null hypothesis, and suggest that wind speed does have an effect on area burned we need to properly conduct a hypothesis test of the difference in means, and produce a confidence intervals around this difference in means.</p>
+<p>The preliminary results seen seem to suggest that there may not be a considerable difference in average area burned when wind is categorized as high or low.</p>
+<p>However, the plots we produced are not enough to come to a conclusion because we do not know how significant the differences in the area burned really is. To be able to come to a conclusion whether or not the wind speed has an effect on the area burned, we need to first see evidence that the data is statistically unlikely under the null hypothesis, therefore allowing us to reject it.</p>
 </section>
 <section id="plan-for-further-research">
 <h2>Plan for Further Research<a class="headerlink" href="#plan-for-further-research" title="Permalink to this headline">#</a></h2>
@@ -427,15 +404,15 @@ title="Print to PDF"
 </section>
 <section id="expectations">
 <h2>Expectations<a class="headerlink" href="#expectations" title="Permalink to this headline">#</a></h2>
-<p>From eyeballing the preliminary results, we don’t expect to find a significant difference in means from the two categories. These results might suggest that the wind speed isn’t as important to track for predicting the severity of wildfires (at least in Portugal). However, it also might point for a need for more comprehensive data over a longer span of time, or that the data collected for this sample needs to track more information about the wind’s behaviour outside of the wind speed to be able to produce a better predictive model.</p>
+<p>From eyeballing the preliminary results, we don’t expect to find a significant difference in averages of the area burned between the two categories. These results might suggest that the wind speed isn’t as important to track for predicting the severity of wildfires (at least in Portugal). However, it might also point for a need for more comprehensive data, or a data set that spans over a longer period of time, or that our model needs to account for more properties about the wind’s behaviour outside of the wind speed.</p>
 <section id="reflection">
 <h3>Reflection<a class="headerlink" href="#reflection" title="Permalink to this headline">#</a></h3>
-<p>The results from this project could signify to bodies that care about wildfires that wind speed isn’t enough to be able to predict the severity of future wild fires (the dependency on this single variable is dangerous), and that there needs to be more investment in finding a property that better fits their forest.</p>
+<p>The results from this project could signify to bodies that care about wildfires that wind speed isn’t enough to be able to predict the severity of future wild fires (the dependency on this single variable is dangerous), and that there needs to be more investment in finding a property that better fits their area.</p>
 </section>
 <section id="more-research-needed">
 <h3>More Research Needed<a class="headerlink" href="#more-research-needed" title="Permalink to this headline">#</a></h3>
 <p>Is it understandable that wind speed is a relatively easy attribute to measure for wind, thus an attractive variable to depend upon for simplistic models.</p>
-<p>Our research could point for a need for new comprehensive methods of measuring other wind properties, which could generate questions around what are the other properties that give the most accurate results of predicting area burned. It could also point to questions whether the most predictive properties are dependent on other properties of the environment that are not wind, and include those into predictive models.</p>
+<p>Our research could point for the need for new comprehensive methods of measuring other wind properties, which presumably would be better at predicting area burned. It could also raise questions as to whether or not the wind speed is truly one of the most significant factors for accurate predictive models, or whether the forest environment has other behaviours that contribute significantly to the severity of these events.</p>
 </section>
 </section>
 </section>
@@ -449,16 +426,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "r"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "ir",
+            kernelName: "python3",
             path: "./src"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'ir'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -473,6 +450,13 @@ title="Print to PDF"
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Preliminary Results</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="Work_Referenced.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Works Referenced</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
