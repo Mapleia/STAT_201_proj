@@ -3,11 +3,11 @@ Welcome to the Jupyter Notebook for the research project.
 
 | Milestones          | Deadline         | Who is submitting? |
 | ------------------- | ---------------- | ------------------ |
-| Group Contract      | Oct 8th 11:59PM  |                    |
-| Project Proposal    | Nov 5th 11:59PM  |                    |
-| Project Peer Review | Nov 12th 11:59PM |                    |
-| Team Evaluation     | Nov 26th 11:59PM |                    |
-| Final Report        | Nov 26th 11:59PM |                    |
+| Group Contract      | Oct 8th 11:59PM  |    @Mapleia        |
+| Project Proposal    | Nov 6th 11:59PM  |    @Mapleia        |
+| Project Peer Review | Nov 12th 11:59PM |    @Mapleia        |
+| Team Evaluation     | Nov 26th 11:59PM |    @Mapleia        |
+| Final Report        | Nov 26th 11:59PM |    @Mapleia        |
 
 ## Written By:
 * Akash Raut
