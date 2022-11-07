@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Preliminary Results &#8212; STAT 201 Group Project</title>
+    <title>Introduction &#8212; STAT 201 Group Project</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Method Plan" href="Methods.html" />
-    <link rel="prev" title="Introductions" href="Introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,29 +106,29 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../project_docs/contract.html">
    Group Contract for Group 19
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="Introduction.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../src/Introduction.html">
    Introductions
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../src/Preliminary_Results.html">
      Preliminary Results
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Methods.html">
+    <a class="reference internal" href="../src/Methods.html">
      Method Plan
     </a>
    </li>
@@ -195,7 +193,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/Mapleia/stat_201_proj/main?urlpath=tree/src/Preliminary_Results.ipynb"
+        <a href="https://mybinder.org/v2/gh/Mapleia/stat_201_proj/main?urlpath=tree/submit-ables/proposal.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -251,7 +249,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/src/Preliminary_Results.ipynb"
+        <a href="../_sources/submit-ables/proposal.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -310,34 +308,85 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-data">
-   Importing Data
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introduction
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
-     Table 1: Top 6 Rows of Forest Fires Data
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preliminary-results">
+   Preliminary Results
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#importing-data">
+     Importing Data
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
+       Table 1: Top 6 Rows of Forest Fires Data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wind-speed-distributions">
+     Wind Speed Distributions
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#area-burned-distributions">
+     Area Burned Distributions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
+       Table 2: Summary Statistics of Forest Fires Data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#wind-speed-distributions">
-   Wind Speed Distributions
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method-plan">
+   Method Plan
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#area-burned-distributions">
-   Area Burned Distributions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
-     Table 2: Summary Statistics of Forest Fires Data
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#is-it-enough">
+     Is it enough?
     </a>
    </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plan-for-further-research">
+     Plan for Further Research
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expectations">
+     Expectations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reflection">
+       Reflection
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#more-research-needed">
+       More Research Needed
+      </a>
+     </li>
+    </ul>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
  </li>
 </ul>
 
@@ -348,7 +397,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Preliminary Results</h1>
+                <h1>Introduction</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -358,34 +407,85 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-data">
-   Importing Data
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introduction
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
-     Table 1: Top 6 Rows of Forest Fires Data
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preliminary-results">
+   Preliminary Results
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#importing-data">
+     Importing Data
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
+       Table 1: Top 6 Rows of Forest Fires Data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wind-speed-distributions">
+     Wind Speed Distributions
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#area-burned-distributions">
+     Area Burned Distributions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
+       Table 2: Summary Statistics of Forest Fires Data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#wind-speed-distributions">
-   Wind Speed Distributions
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method-plan">
+   Method Plan
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#area-burned-distributions">
-   Area Burned Distributions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
-     Table 2: Summary Statistics of Forest Fires Data
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#is-it-enough">
+     Is it enough?
     </a>
    </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plan-for-further-research">
+     Plan for Further Research
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expectations">
+     Expectations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reflection">
+       Reflection
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#more-research-needed">
+       More Research Needed
+      </a>
+     </li>
+    </ul>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
  </li>
 </ul>
 
@@ -397,7 +497,15 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="preliminary-results">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Wildfires are a dangerous and incredibly destructive phenomenon of nature, which makes understanding and predicting them perimount to curbing their destructive potential in the future. However, there are innumerable factors to consider when trying to predict the effects of a wildfire. Of the two “most important” factors in how wildfires are spread, wind speed is “the most variable and the least predictable.” [1] However, in spite of its variability, its predictive power is immense. So much so that there exists a simple “10% rule” that approximates a wildfire&#39;s rate of spread simply through “10% of the average 10-m open wind speed.” [2] This simple model can produce results “comparable to those obtained by the established fire spread rate models” [2] while only accounting for the wind speed factor.
+
+For our project we aim to put the literature to the test and see just how powerful a factor wind speed truly is for ourselves. We aim to answer the question “What is the difference in average total area burned by a wildfire between times of low wind speed and times of high wind speed?” We would also like to approximate the standard deviation of this difference to see if the results are consistently statistically significant. To answer our question, we have made use of a dataset containing data of the total area burned from 517 forest fires in the northeastern region of Portugal. This dataset also includes the wind speed among other less relevant variables.
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="preliminary-results">
 <h1>Preliminary Results<a class="headerlink" href="#preliminary-results" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -472,7 +580,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_6_0.png" src="../_images/Preliminary_Results_6_0.png" />
+<img alt="../_images/proposal_8_0.png" src="../_images/proposal_8_0.png" />
 </div>
 </div>
 <p>Based on figure 1, wind speed is almost a bimodal distribution (without much modification), we can safely assume that we can categorize wind speed into “high” and “low”.</p>
@@ -505,7 +613,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_8_0.png" src="../_images/Preliminary_Results_8_0.png" />
+<img alt="../_images/proposal_10_0.png" src="../_images/proposal_10_0.png" />
 </div>
 </div>
 <p>Based on Figure 3, there is a considerable difference in wind speed. A confidence interval would be useful to see if their ranges overlap in a interesting manner. We could also have a confidence interval around the difference of the mean.</p>
@@ -529,7 +637,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_11_0.png" src="../_images/Preliminary_Results_11_0.png" />
+<img alt="../_images/proposal_13_0.png" src="../_images/proposal_13_0.png" />
 </div>
 </div>
 <p>Figure 4 shows that it make sense to scale the data in a logrithmic scale.</p>
@@ -568,7 +676,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_14_0.png" src="../_images/Preliminary_Results_14_0.png" />
+<img alt="../_images/proposal_16_0.png" src="../_images/proposal_16_0.png" />
 </div>
 </div>
 <section id="table-2-summary-statistics-of-forest-fires-data">
@@ -611,6 +719,58 @@ title="Print to PDF"
 </section>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="method-plan">
+<h1>Method Plan<a class="headerlink" href="#method-plan" title="Permalink to this headline">#</a></h1>
+<p>The methods used to generate this report can be considered trustworthy based on:</p>
+<ul class="simple">
+<li><p>The data is coming from a peer reviewed research that is publicly available.</p></li>
+<li><p>the dataset is quite large, encompassing over 500 data points</p></li>
+<li><p>All the N/A values are removed from the dataset and the response variable is transformed using a log function to have a less skewed distribution.</p>
+<ul>
+<li><p>to account for the data points where the area burned was 0, we uniformly added 1 to every data point so that the differences between the data points are retained</p></li>
+</ul>
+</li>
+</ul>
+<p>In relation to research question, our null hypothesis states that we will not see a difference in the area burned between the two wind speed categories.</p>
+<section id="is-it-enough">
+<h2>Is it enough?<a class="headerlink" href="#is-it-enough" title="Permalink to this headline">#</a></h2>
+<p>The preliminary results seen seem to suggest that there may not be considerable differences in area burned when wind is categorized as high or low.</p>
+<p>However, the plots we produced are not enough to come to a conclusion because we do not know the significance we see in the differences in the area burned in the 2 different categories. To be able to confidently say if the results we see from the data significantly differenciates from the null hypothesis, and suggest that wind speed does have an effect on area burned we need to properly conduct a hypothesis test of the difference in means, and produce a confidence intervals around this difference in means.</p>
+</section>
+<section id="plan-for-further-research">
+<h2>Plan for Further Research<a class="headerlink" href="#plan-for-further-research" title="Permalink to this headline">#</a></h2>
+<p>Our plan is to include:</p>
+<ul class="simple">
+<li><p>hypothesis test around the difference in means of area burned across the two wind categories</p></li>
+<li><p>a confidence interval around this difference in means</p></li>
+<li><p>a bootstrap distribution pulled from our sample data</p>
+<ul>
+<li><p>which could be used to produce that confidence interval</p></li>
+</ul>
+</li>
+<li><p>calculate the p-value to find it’s likelyhood under the null hypothesis</p></li>
+<li><p>the t-value and compare it to the sample’s t-distribution</p></li>
+</ul>
+</section>
+<section id="expectations">
+<h2>Expectations<a class="headerlink" href="#expectations" title="Permalink to this headline">#</a></h2>
+<p>From eyeballing the preliminary results, we don’t expect to find a significant difference in means from the two categories. These results might suggest that the wind speed isn’t as important to track for predicting the severity of wildfires (at least in Portugal). However, it also might point for a need for more comprehensive data over a longer span of time, or that the data collected for this sample needs to track more information about the wind’s behaviour outside of the wind speed to be able to produce a better predictive model.</p>
+<section id="reflection">
+<h3>Reflection<a class="headerlink" href="#reflection" title="Permalink to this headline">#</a></h3>
+<p>The results from this project could signify to bodies that care about wildfires that wind speed isn’t enough to be able to predict the severity of future wild fires (the dependency on this single variable is dangerous), and that there needs to be more investment in finding a property that better fits their forest.</p>
+</section>
+<section id="more-research-needed">
+<h3>More Research Needed<a class="headerlink" href="#more-research-needed" title="Permalink to this headline">#</a></h3>
+<p>Is it understandable that wind speed is a relatively easy attribute to measure for wind, thus an attractive variable to depend upon for simplistic models.</p>
+<p>Our research could point for a need for new comprehensive methods of measuring other wind properties, which could generate questions around what are the other properties that give the most accurate results of predicting area burned. It could also point to questions whether the most predictive properties are dependent on other properties of the environment that are not wind, and include those into predictive models.</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h1>
+<p>[1] General Winds | NWCG. (n.d.). Retrieved November 4, 2022, from <a class="reference external" href="https://www.nwcg.gov/publications/pms425-1/general-winds">https://www.nwcg.gov/publications/pms425-1/general-winds</a></p>
+<p>[2] Cruz, M. G. (2019, April 25). The 10% wind speed rule of thumb for estimating a wildfire’s forward rate of spread in forests and shrublands - Annals of Forest Science. BioMed Central. <a class="reference external" href="https://annforsci.biomedcentral.com/articles/10.1007/s13595-019-0829-8">https://annforsci.biomedcentral.com/articles/10.1007/s13595-019-0829-8</a></p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -625,7 +785,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "ir",
-            path: "./src"
+            path: "./submit-ables"
         },
         predefinedOutput: true
     }
@@ -639,20 +799,6 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Introduction.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introductions</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="Methods.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Method Plan</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
