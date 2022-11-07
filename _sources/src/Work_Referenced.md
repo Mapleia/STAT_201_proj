@@ -2,4 +2,5 @@
 
 ```{bibliography}
 :all:
+:style: alpha
 ```
