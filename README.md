@@ -1,6 +1,11 @@
 # Overview
 Welcome to the Jupyter Notebook for the research project.
 
+## See Notebooks
+See `src/` for the notebook pages. 
+
+## Deadline
+
 | Milestones          | Deadline         | Who is submitting? |
 | ------------------- | ---------------- | ------------------ |
 | Group Contract      | Oct 8th 11:59PM  |    @Mapleia        |
