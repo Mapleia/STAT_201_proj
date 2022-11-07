@@ -2,7 +2,9 @@
 Welcome to the Jupyter Notebook for the research project.
 
 ## See Notebooks
-See `src/` for the notebook pages. 
+See `src/` for the `.ipynb` notebook pages.
+
+See the branch [`gh-pages`](https://github.com/Mapleia/STAT_201_proj/tree/gh-pages) for the HTML pages.
 
 ## Deadline
 
