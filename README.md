@@ -33,7 +33,7 @@ See the branch [`gh-pages`](https://github.com/Mapleia/STAT_201_proj/tree/gh-pag
     > Remember to run `conda init` after install.
 2. Setup with:
     ```sh
-      conda env create --no-default-packages -f src/conda_env.yml
+      conda env create --no-default-packages -f conda_env.yml
     ```
 3. Activate the notebook env and run the kernel.
     ```sh

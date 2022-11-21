@@ -6,5 +6,7 @@ chapters:
   sections:
   - file: src/Preliminary_Results
   - file: src/Methods
+- file: Methods_Results
+- file: Discussion
 - file: src/Work_Referenced
 
