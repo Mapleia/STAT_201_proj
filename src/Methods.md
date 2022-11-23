@@ -6,32 +6,24 @@ The methods used to generate this report can be considered trustworthy based on:
 - All the N/A values are removed from the dataset and the response variable is transformed using a log function to have a less skewed distribution.
     - to account for the data points where the area burned was 0, we uniformly added 1 to every data point so that the differences between the data points were retained
 
-In relation to research question, our null hypothesis states that we will not see a difference in the area burned between the two wind speed categories.
+In relation to the research question, our null hypothesis states that we will not see a difference in the area burned between the two wind speed categories.
 
-## Is it enough?
-The preliminary results seen seem to suggest that there may not be a considerable difference in average area burned when wind is categorized as high or low.
+### Is it enough?
 
-However, the plots we produced are not enough to come to a conclusion because we do not know how significant the differences in the area burned really is. To be able to come to a conclusion whether or not the wind speed has an effect on the area burned, we need to first see evidence that the data is statistically unlikely under the null hypothesis, therefore allowing us to reject it.
+The preliminary results seen seem to suggest that there may not be a considerable difference in average area burned when wind is categorized as high or low. However, we cannot come to a definitive conclution without any evidence, so we need to test the likelyhood of our statistic under the null hypotheis first and foremost.
 
-## Plan for Further Research
+### Plan for Further Research
 
-Our plan is to include:
-- hypothesis test around the difference in means of area burned across the two wind categories
-- a confidence interval around this difference in means
-- a bootstrap distribution pulled from our sample data
-    - which could be used to produce that confidence interval
-- calculate the p-value to find it's likelyhood under the null hypothesis
-- the t-value and compare it to the sample's t-distribution
+Our plan is to:
+- Construct a 95% confidence interval from a bootstrap distribution of difference in means
+- Conduct a hypothesis test for our statistic using a simulation based approach with a 5% significance level
+- Conduct a hypothesis test for our statistic using a theory based approach with a 5% significance level
+- Analyze the results to come to a conclution regarding our research question
 
-## Expectations
+### Expectations
 
-From eyeballing the preliminary results, we don't expect to find a significant difference in averages of the area burned between the two categories. These results might suggest that the wind speed isn't as important to track for predicting the severity of wildfires (at least in Portugal). However, it might also point for a need for more comprehensive data, or a data set that spans over a longer period of time, or that our model needs to account for more properties about the wind's behaviour outside of the wind speed.
-
-### Reflection
-
-The results from this project could signify to bodies that care about wildfires that wind speed isn't enough to be able to predict the severity of future wild fires (the dependency on this single variable is dangerous), and that there needs to be more investment in finding a property that better fits their area.
+At first glance, the preliminary results don't seem to suggest a strong relationship between area burned and wind speed. This could suggest that wind speed is not as important of a factor as the prior research lead us to believe, but it could also be a symptom of some flaw in our approach. It could very well be the case that our catagorization of the wind speed was too arbitrary and that we needed a more definitive metric to define "high" and "low".
 
 ### More Research Needed
-Is it understandable that wind speed is a relatively easy attribute to measure for wind, thus an attractive variable to depend upon for simplistic models.
 
-Our research could point for the need for new comprehensive methods of measuring other wind properties, which presumably would be better at predicting area burned. It could also raise questions as to whether or not the wind speed is truly one of the most significant factors for accurate predictive models, or whether the forest environment has other behaviours that contribute significantly to the severity of these events.
+It's understandable that wind speed is a relatively easy attribute to measure for wind, and is thus an attractive variable to depend upon for simplistic models. If our perlimary results prove valid, it may indicate the need revaluate the strength of the wind speed factor and develop more complex models that take in a wider range of parameters (presumably to the tune of more accurate results).
