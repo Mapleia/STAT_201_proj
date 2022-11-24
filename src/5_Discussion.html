@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Methods &#8212; STAT 201 Group Project</title>
+    <title>Discussion &#8212; STAT 201 Group Project</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Preliminary Results" href="Preliminary_Results.html" />
+    <link rel="next" title="Works Referenced" href="Work_Referenced.html" />
+    <link rel="prev" title="Methods and Results" href="4_Methods_Results.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,27 +114,42 @@ const thebe_selector_output = ".output, .cell_output"
    Group Contract for Group 19
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="Introduction.html">
-   Introductions
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="1_Introduction.html">
+   Proposal
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="Preliminary_Results.html">
+    <a class="reference internal" href="2_Preliminary_Results.html">
      Preliminary Results
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Methods
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_Method_Plan.html">
+     Method Plan
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4_Methods_Results.html">
+   Methods and Results
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Discussion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Work_Referenced.html">
+   Works Referenced
+  </a>
  </li>
 </ul>
 
@@ -186,35 +202,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/Mapleia/stat_201_proj/main?urlpath=tree/src/Methods.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -250,7 +237,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/src/Methods.ipynb"
+        <a href="../_sources/src/5_Discussion.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -261,7 +248,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="headerbtn__text-container">.md</span>
 </a>
 
       </li>
@@ -299,7 +286,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Methods</h1>
+                <h1>Discussion</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -311,8 +298,15 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="methods">
-<h1>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="discussion">
+<h1>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">#</a></h1>
+<p>We used bootstrapping to calculate the 95% confidence interval of the difference in means <code class="docutils literal notranslate"><span class="pre">(-0.143,</span> <span class="pre">0.0766)</span></code>. We can see that the confidence interval is quite large as it spans the majority of the bootstrap distribution (Figure 8) range for this sample. This wide confidence interval suggests that there is a need for a larger sample size to generate a more precise and narrow confidence interval, which would produce a bootstrap distribution that would have more values centered around the difference in mean area burned (transformed logrithmically).</p>
+<p>The null distribution produced using the infer library (Figure 9) is configured to test whether the <code class="docutils literal notranslate"><span class="pre">area_log10</span></code> response variable is “independent” of the explanatory variable <code class="docutils literal notranslate"><span class="pre">category</span></code> that splits the dataset into two groups.</p>
+<p>Looking at the null distribution produced using the infer library, we can see that the two-sided shaded area points to a fairly large p-value of <code class="docutils literal notranslate"><span class="pre">0.573</span></code>. This suggests that the sample estimate statistic with the value of <code class="docutils literal notranslate"><span class="pre">-0.03014077</span></code> is not that unusual under the null hypothesis. At a 5% significance level, we do not reject the null hypothesis because of the lack of difference in the mean area burned by the two wind speed categories as the p-value is larger than the significance level. Thus, the value seen from the sample with &gt;500 data points is not extreme enough to be possible under the hypothesized situation where there isn’t a difference in the area burned.</p>
+<p>Using the asymptotic approach we get another p-value of <code class="docutils literal notranslate"><span class="pre">0.579</span></code> which is quite similar to our p-value from before. From our analysis, this slight difference in the p-values between bootstrapping and asymptotic approach arises from the assumptions about the population for the asymptotic approach. We believe that the bootstrapping p-value is the more accurate one as the process required no such assumption about the population.</p>
+<p>These p-value generated from the hypothesis tests are not too far off of our expectations based on the preliminary results. We were hoping to at least find a weak relationship between wind speeds and burned area in forest fires, but we predicted that wind speed might not be a significant causing factor in forest fires. Our expectations seem reasonable now seeing that we find no evidence to reject the null hypothesis of the existence of no difference in means of the two wind speeds and the forest area burned in fires.</p>
+<p>All in all, our findings suggest that wind speeds have no significant effect on the area of forest burned in a forest fire. This finding  should be considered when forming questions for further research. Forest fires increase the amount of carbon dioxide along with other greenhouse gases in the air leading to climate change <span id="id1">[<a class="reference internal" href="Work_Referenced.html#id5">Dixon and Krankina, n.d.</a>]</span>. In addition, forest fires can erode and degrade the soil in the area leading to poor vegetation and wildlife, ultimately harming the ecosystem <span id="id2">[<a class="reference internal" href="Work_Referenced.html#id6" title="L. Xue, H. Chen, Z. Yang, Y. Wu, B. Liu, P. Xu, and L. Pan. The effect of fire on soil properties in a pinus massoniana stand. Shengtai Xuebao/ Acta Ecologica Sinica, 31:6824-6831, 01 2011.">Xue <em>et al.</em>, 2011</a>]</span>. Having such adverse effects on the environment calls for a need to look at what factors could be limited to prevent or decrease the scale of these fires.</p>
+<p>If we use this result to eliminate wind speed as a significant source of wildfire spread, further research should look at other factors like temperature, humidity, and geographic location that might be more related to forest fires. In addition, this could lead to more study that asks what makes the wildfires in Portugal unique in that the wind-speeds do not affect their fires as much, which is in contrary to literature already published. Knowing what factors play a significant role can help us to identify areas that might be more prone to forest fires and then reduce the risk of forest fires in those areas while controlling the deciding factors.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -324,16 +318,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "r"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "ir",
+            kernelName: "python3",
             path: "./src"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'ir'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -342,12 +336,19 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Preliminary_Results.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="4_Methods_Results.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Preliminary Results</p>
+            <p class="prev-next-title">Methods and Results</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="Work_Referenced.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Works Referenced</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

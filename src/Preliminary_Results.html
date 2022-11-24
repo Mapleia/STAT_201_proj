@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Method Plan" href="Methods.html" />
-    <link rel="prev" title="Proposal" href="Introduction.html" />
+    <link rel="next" title="Methods" href="Methods.html" />
+    <link rel="prev" title="Introductions" href="Introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Introduction.html">
-   Proposal
+   Introductions
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -131,15 +131,10 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Methods.html">
-     Method Plan
+     Methods
     </a>
    </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Work_Referenced.html">
-   Works Referenced
-  </a>
  </li>
 </ul>
 
@@ -316,33 +311,14 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-data">
-   Importing Data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
-     Table 1: Top 6 Rows of Forest Fires Data
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#wind-speed-distributions">
-   Wind Speed Distributions
+  <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
+   Table 1: Top 6 Rows of Forest Fires Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#area-burned-distributions">
-   Area Burned Distributions
+  <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
+   Table 2: Summary Statistics of Forest Fires Data
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
-     Table 2: Summary Statistics of Forest Fires Data
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -364,33 +340,14 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#importing-data">
-   Importing Data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
-     Table 1: Top 6 Rows of Forest Fires Data
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#wind-speed-distributions">
-   Wind Speed Distributions
+  <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
+   Table 1: Top 6 Rows of Forest Fires Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#area-burned-distributions">
-   Area Burned Distributions
+  <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
+   Table 2: Summary Statistics of Forest Fires Data
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
-     Table 2: Summary Statistics of Forest Fires Data
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -407,7 +364,6 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the necessary packages.</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">GGally</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">infer</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">cowplot</span><span class="p">)</span>
@@ -418,10 +374,6 @@ title="Print to PDF"
 <div class="cell_output docutils container">
 </div>
 </div>
-<section id="importing-data">
-<h2>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">#</a></h2>
-<section id="table-1-top-6-rows-of-forest-fires-data">
-<h3>Table 1: Top 6 Rows of Forest Fires Data<a class="headerlink" href="#table-1-top-6-rows-of-forest-fires-data" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">#Setting the seed.</span>
@@ -429,17 +381,12 @@ title="Print to PDF"
 
 <span class="c1">#Dowloading the data from the web and reading it in R.</span>
 <span class="n">url</span> <span class="o">&lt;-</span> <span class="s">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/forestfires.csv&quot;</span>
+<span class="nf">download.file </span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="s">&quot;../data/forestfires.csv&quot;</span> <span class="p">)</span>
 
-<span class="n">filepath</span> <span class="o">&lt;-</span> <span class="s">&quot;../data/forestfires.csv&quot;</span>
-
-<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">file.exists</span><span class="p">(</span><span class="n">filepath</span><span class="p">))</span> <span class="p">{</span>
-    <span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">filepath</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="n">forest_fires_data</span> <span class="o">&lt;-</span><span class="nf">read_delim</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">0</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
-    <span class="nf">select</span><span class="p">(</span><span class="n">wind</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span> <span class="o">%&gt;%</span>
-    <span class="nf">mutate</span><span class="p">(</span><span class="n">wind</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">wind</span><span class="p">),</span> <span class="n">area</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">area</span><span class="p">))</span> <span class="o">%&gt;%</span> <span class="c1">#Wrangling data and selecting columns to be used in prediction</span>
-    <span class="nf">filter</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">wind</span><span class="p">)</span> <span class="o">|</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">area</span><span class="p">))</span>
+<span class="n">forest_fires_data</span> <span class="o">&lt;-</span><span class="nf">read_delim</span><span class="p">(</span><span class="s">&quot;../data/forestfires.csv&quot;</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">0</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">select</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">wind</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span> <span class="o">%&gt;%</span>
+    <span class="nf">mutate</span><span class="p">(</span><span class="n">month</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">month</span><span class="p">),</span> <span class="n">wind</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">wind</span><span class="p">),</span> <span class="n">area</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">area</span><span class="p">))</span> <span class="o">%&gt;%</span> <span class="c1">#Wrangling data and selecting columns to be used in prediction</span>
+    <span class="nf">filter</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">month</span><span class="p">)</span> <span class="o">|</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">wind</span><span class="p">)</span> <span class="o">|</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">area</span><span class="p">))</span>
     
 <span class="nf">head</span><span class="p">(</span><span class="n">forest_fires_data</span><span class="p">)</span>
 </pre></div>
@@ -447,178 +394,77 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><table class="dataframe">
-<caption>A tibble: 6 × 2</caption>
+<caption>A tibble: 6 × 3</caption>
 <thead>
-	<tr><th scope=col>wind</th><th scope=col>area</th></tr>
-	<tr><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+	<tr><th scope=col>month</th><th scope=col>wind</th><th scope=col>area</th></tr>
+	<tr><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><td>6.7</td><td>0</td></tr>
-	<tr><td>0.9</td><td>0</td></tr>
-	<tr><td>1.3</td><td>0</td></tr>
-	<tr><td>4.0</td><td>0</td></tr>
-	<tr><td>1.8</td><td>0</td></tr>
-	<tr><td>5.4</td><td>0</td></tr>
+	<tr><td>mar</td><td>6.7</td><td>0</td></tr>
+	<tr><td>oct</td><td>0.9</td><td>0</td></tr>
+	<tr><td>oct</td><td>1.3</td><td>0</td></tr>
+	<tr><td>mar</td><td>4.0</td><td>0</td></tr>
+	<tr><td>mar</td><td>1.8</td><td>0</td></tr>
+	<tr><td>aug</td><td>5.4</td><td>0</td></tr>
 </tbody>
 </table>
 </div></div>
 </div>
-</section>
-</section>
-<section id="wind-speed-distributions">
-<h2>Wind Speed Distributions<a class="headerlink" href="#wind-speed-distributions" title="Permalink to this headline">#</a></h2>
+<section id="table-1-top-6-rows-of-forest-fires-data">
+<h2>Table 1: Top 6 Rows of Forest Fires Data<a class="headerlink" href="#table-1-top-6-rows-of-forest-fires-data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
-<span class="n">wind_speed_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">wind</span><span class="p">))</span><span class="o">+</span>
-    <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Wind Speed (km/h)&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
-    <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 1: Wind Speed Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Month of Fires&quot;</span><span class="p">)</span><span class="o">+</span>
-    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span> 
-<span class="n">wind_speed_plot</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">#Visualizing the summary of the predictor variables.</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">summary</span><span class="p">(</span><span class="n">forest_fires_data</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_6_0.png" src="../_images/Preliminary_Results_6_0.png" />
-</div>
-</div>
-<p>Based on figure 1, wind speed is almost a bimodal distribution (without much modification), we can safely assume that we can categorize wind speed into “high” and “low”.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">xs</span> <span class="o">&lt;-</span> <span class="nf">quantile</span><span class="p">(</span><span class="n">forest_fires_data</span><span class="o">$</span><span class="n">wind</span><span class="p">,</span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">1</span><span class="o">/</span><span class="m">2</span><span class="p">,</span><span class="m">1</span><span class="p">))</span>
-
-<span class="c1"># add category column</span>
-<span class="n">forest_fires_data</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">mutate</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="nf">cut</span><span class="p">(</span><span class="n">wind</span><span class="p">,</span> <span class="n">breaks</span><span class="o">=</span><span class="n">xs</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;low&quot;</span><span class="p">,</span><span class="s">&quot;high&quot;</span><span class="p">),</span><span class="n">include.lowest</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span>
-
-<span class="n">wind_plot_categorized</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">wind</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span><span class="o">+</span>
-    <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Wind Speed&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
-    <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 2: Wind Speed Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Wind Speed Category&quot;</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span> <span class="o">+</span> 
-    <span class="nf">geom_vline</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">xintercept</span> <span class="o">=</span> <span class="nf">quantile</span><span class="p">(</span><span class="n">wind</span><span class="p">)[</span><span class="m">3</span><span class="p">]))</span>
-
-<span class="n">box_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-  <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">category</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">wind</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span> <span class="o">+</span>
-  <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
-  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Wind Speed Category&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Wind Speed&quot;</span><span class="p">)</span> <span class="o">+</span>
-  <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 3: Boxplot of Wind Speed by Category&quot;</span><span class="p">)</span> 
-
-<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">12</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
-<span class="nf">plot_grid</span><span class="p">(</span><span class="n">wind_plot_categorized</span><span class="p">,</span> <span class="n">box_plot</span><span class="p">)</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     month          wind            area        
+ aug    :184   Min.   :0.400   Min.   :   0.00  
+ sep    :172   1st Qu.:2.700   1st Qu.:   0.00  
+ mar    : 54   Median :4.000   Median :   0.52  
+ jul    : 32   Mean   :4.018   Mean   :  12.85  
+ feb    : 20   3rd Qu.:4.900   3rd Qu.:   6.57  
+ jun    : 17   Max.   :9.400   Max.   :1090.84  
+ (Other): 38                                    
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_8_0.png" src="../_images/Preliminary_Results_8_0.png" />
 </div>
-</div>
-<p>Based on Figure 3, there is a considerable difference in wind speed. A confidence interval would be useful to see if their ranges overlap in a interesting manner. We could also have a confidence interval around the difference of the mean.</p>
 </section>
-<section id="area-burned-distributions">
-<h2>Area Burned Distributions<a class="headerlink" href="#area-burned-distributions" title="Permalink to this headline">#</a></h2>
+<section id="table-2-summary-statistics-of-forest-fires-data">
+<h2>Table 2: Summary Statistics of Forest Fires Data<a class="headerlink" href="#table-2-summary-statistics-of-forest-fires-data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 
 <span class="c1">#Visualizing the distribution of each variable</span>
-<span class="n">area_burned_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">area</span><span class="p">))</span><span class="o">+</span>
+<span class="n">plot_1</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
+    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">wind</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">month</span><span class="p">))</span><span class="o">+</span>
+    <span class="nf">geom_bar</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">10</span><span class="p">)</span> <span class="o">+</span> 
+    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Wind Speed (km/h)&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
+    <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 1: Wind Speed Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
+    <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Month of Fires&quot;</span><span class="p">)</span><span class="o">+</span>
+    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span> 
+<span class="n">plot_1</span>
+
+<span class="n">plot_2</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
+    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">area</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">month</span><span class="p">))</span><span class="o">+</span>
     <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">10</span><span class="p">)</span> <span class="o">+</span> 
     <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Area Burned (ha)&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
-    <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 4: Area Burned Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
+    <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 2: Area Burned Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Month of Fires&quot;</span><span class="p">)</span><span class="o">+</span>
     <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span>
-<span class="n">area_burned_plot</span>   
+<span class="n">plot_2</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_11_0.png" src="../_images/Preliminary_Results_11_0.png" />
+<img alt="../_images/Preliminary_Results_6_1.png" src="../_images/Preliminary_Results_6_1.png" />
+<img alt="../_images/Preliminary_Results_6_2.png" src="../_images/Preliminary_Results_6_2.png" />
 </div>
 </div>
-<p>Figure 4 shows that it make sense to scale the data in a logrithmic scale.</p>
-<blockquote>
-<div><p>See <a class="reference external" href="https://www.programmingr.com/tutorial/log-in-r/">https://www.programmingr.com/tutorial/log-in-r/</a>.</p>
-</div></blockquote>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">forest_fires_data</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">mutate</span><span class="p">(</span><span class="n">area_log10</span> <span class="o">=</span> <span class="nf">log10</span><span class="p">(</span><span class="m">1</span><span class="o">+</span> <span class="n">area</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
-
-<span class="n">area_burned_scaled_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">area_log10</span><span class="p">))</span><span class="o">+</span>
-    <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Area Burned (ha) [log 10 scaled]&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
-    <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 5: Area Burned Distribution (scaled)&quot;</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Month of Fires&quot;</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span>
-
-<span class="n">box_plot_burned</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-  <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">category</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">area_log10</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span> <span class="o">+</span>
-  <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
-  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Scaled Area vs Wind Speed Category&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Scaled Area Burned (ha)&quot;</span><span class="p">)</span><span class="o">+</span>
-  <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 6: Boxplot of Area Burned by Category&quot;</span><span class="p">)</span>
-
-<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">12</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
-<span class="nf">plot_grid</span><span class="p">(</span><span class="n">area_burned_scaled_plot</span><span class="p">,</span> <span class="n">box_plot_burned</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/Preliminary_Results_14_0.png" src="../_images/Preliminary_Results_14_0.png" />
-</div>
-</div>
-<section id="table-2-summary-statistics-of-forest-fires-data">
-<h3>Table 2: Summary Statistics of Forest Fires Data<a class="headerlink" href="#table-2-summary-statistics-of-forest-fires-data" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-<span class="nf">group_by</span><span class="p">(</span><span class="n">category</span><span class="p">)</span> <span class="o">%&gt;%</span>
-<span class="nf">filter</span><span class="p">(</span><span class="n">category</span> <span class="o">==</span> <span class="s">&quot;low&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
-<span class="nf">summary</span><span class="p">()</span>
-
-<span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-<span class="nf">group_by</span><span class="p">(</span><span class="n">category</span><span class="p">)</span> <span class="o">%&gt;%</span>
-<span class="nf">filter</span><span class="p">(</span><span class="n">category</span> <span class="o">==</span> <span class="s">&quot;high&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
-<span class="nf">summary</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      wind            area          category     area_log10    
- Min.   :0.400   Min.   :   0.000   low :300   Min.   :0.0000  
- 1st Qu.:2.200   1st Qu.:   0.000   high:  0   1st Qu.:0.0000  
- Median :2.700   Median :   0.495              Median :0.1746  
- Mean   :2.779   Mean   :  12.615              Mean   :0.4699  
- 3rd Qu.:3.600   3rd Qu.:   6.365              3rd Qu.:0.8672  
- Max.   :4.000   Max.   :1090.840              Max.   :3.0382  
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      wind            area        category     area_log10    
- Min.   :4.500   Min.   :  0.00   low :  0   Min.   :0.0000  
- 1st Qu.:4.900   1st Qu.:  0.00   high:217   1st Qu.:0.0000  
- Median :5.400   Median :  0.61              Median :0.2068  
- Mean   :5.729   Mean   : 13.17              Mean   :0.5000  
- 3rd Qu.:6.300   3rd Qu.:  7.73              3rd Qu.:0.9410  
- Max.   :9.400   Max.   :746.28              Max.   :2.8735  
-</pre></div>
-</div>
-</div>
-</div>
-</section>
 </section>
 </section>
 
@@ -653,13 +499,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Proposal</p>
+            <p class="prev-next-title">Introductions</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Methods.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Method Plan</p>
+        <p class="prev-next-title">Methods</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

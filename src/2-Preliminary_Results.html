@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; STAT 201 Group Project</title>
+    <title>Preliminary Results &#8212; STAT 201 Group Project</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Works Referenced" href="Work_Referenced.html" />
+    <link rel="prev" title="Proposal" href="1-Introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -106,36 +108,31 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../project_docs/contract.html">
    Group Contract for Group 19
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../src/Introduction.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="1-Introduction.html">
    Proposal
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../src/Preliminary_Results.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Preliminary Results
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../src/Methods.html">
-     Method Plan
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../src/Work_Referenced.html">
+  <a class="reference internal" href="Work_Referenced.html">
    Works Referenced
   </a>
  </li>
@@ -198,7 +195,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/Mapleia/stat_201_proj/main?urlpath=tree/submit-ables/proposal.ipynb"
+        <a href="https://mybinder.org/v2/gh/Mapleia/stat_201_proj/main?urlpath=tree/src/2-Preliminary_Results.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -254,7 +251,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/submit-ables/proposal.ipynb"
+        <a href="../_sources/src/2-Preliminary_Results.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -313,84 +310,19 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Introduction
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-data">
+   Importing Data
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preliminary-results">
-   Preliminary Results
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wind-speed-distributions">
+   Wind Speed Distributions
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#importing-data">
-     Importing Data
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
-       Table 1: Top 6 Rows of Forest Fires Data
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wind-speed-distributions">
-     Wind Speed Distributions
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#area-burned-distributions">
-     Area Burned Distributions
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
-       Table 2: Summary Statistics of Forest Fires Data
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#method-plan">
-   Method Plan
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#is-it-enough">
-     Is it enough?
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plan-for-further-research">
-     Plan for Further Research
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#expectations">
-     Expectations
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reflection">
-       Reflection
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#more-research-needed">
-       More Research Needed
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#area-burned-distributions">
+   Area Burned Distributions
   </a>
  </li>
 </ul>
@@ -402,7 +334,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction</h1>
+                <h1>Preliminary Results</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -412,84 +344,19 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Introduction
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-data">
+   Importing Data
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#preliminary-results">
-   Preliminary Results
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wind-speed-distributions">
+   Wind Speed Distributions
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#importing-data">
-     Importing Data
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#table-1-top-6-rows-of-forest-fires-data">
-       Table 1: Top 6 Rows of Forest Fires Data
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wind-speed-distributions">
-     Wind Speed Distributions
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#area-burned-distributions">
-     Area Burned Distributions
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#table-2-summary-statistics-of-forest-fires-data">
-       Table 2: Summary Statistics of Forest Fires Data
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#method-plan">
-   Method Plan
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#is-it-enough">
-     Is it enough?
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plan-for-further-research">
-     Plan for Further Research
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#expectations">
-     Expectations
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reflection">
-       Reflection
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#more-research-needed">
-       More Research Needed
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#area-burned-distributions">
+   Area Burned Distributions
   </a>
  </li>
 </ul>
@@ -502,15 +369,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Wildfires are a dangerous and incredibly destructive phenomenon of nature, which makes understanding and predicting them perimount to curbing their destructive potential in the future. However, there are innumerable factors to consider when trying to predict the effects of a wildfire. Of the two “most important” factors in how wildfires are spread, wind speed is “the most variable and the least predictable.” [1] However, in spite of its variability, its predictive power is immense. So much so that there exists a simple “10% rule” that approximates a wildfire&#39;s rate of spread simply through “10% of the average 10-m open wind speed.” [2] This simple model can produce results “comparable to those obtained by the established fire spread rate models” [2] while only accounting for the wind speed factor.
-
-For our project we aim to put the literature to the test and see just how powerful a factor wind speed truly is for ourselves. We aim to answer the question “What is the difference in average total area burned by a wildfire between times of low wind speed and times of high wind speed?” We would also like to approximate the standard deviation of this difference to see if the results are consistently statistically significant. To answer our question, we have made use of a dataset containing data of the total area burned from 517 forest fires in the northeastern region of Portugal. This dataset also includes the wind speed among other less relevant variables.
-</pre></div>
-</div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="preliminary-results">
+  <section class="tex2jax_ignore mathjax_ignore" id="preliminary-results">
 <h1>Preliminary Results<a class="headerlink" href="#preliminary-results" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -528,8 +387,6 @@ For our project we aim to put the literature to the test and see just how powerf
 </div>
 <section id="importing-data">
 <h2>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">#</a></h2>
-<section id="table-1-top-6-rows-of-forest-fires-data">
-<h3>Table 1: Top 6 Rows of Forest Fires Data<a class="headerlink" href="#table-1-top-6-rows-of-forest-fires-data" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">#Setting the seed.</span>
@@ -537,9 +394,16 @@ For our project we aim to put the literature to the test and see just how powerf
 
 <span class="c1">#Dowloading the data from the web and reading it in R.</span>
 <span class="n">url</span> <span class="o">&lt;-</span> <span class="s">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/forestfires.csv&quot;</span>
-<span class="nf">download.file </span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="s">&quot;../data/forestfires.csv&quot;</span> <span class="p">)</span>
 
-<span class="n">forest_fires_data</span> <span class="o">&lt;-</span><span class="nf">read_delim</span><span class="p">(</span><span class="s">&quot;../data/forestfires.csv&quot;</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">0</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+<span class="n">filepath</span> <span class="o">&lt;-</span> <span class="s">&quot;../data/forestfires.csv&quot;</span>
+
+<span class="c1"># download the file if its not present</span>
+<span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nf">file.exists</span><span class="p">(</span><span class="n">filepath</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">filepath</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># select the columns we need, and filter out NA values</span>
+<span class="n">forest_fires_data</span> <span class="o">&lt;-</span><span class="nf">read_delim</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">0</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
     <span class="nf">select</span><span class="p">(</span><span class="n">wind</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span> <span class="o">%&gt;%</span>
     <span class="nf">mutate</span><span class="p">(</span><span class="n">wind</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">wind</span><span class="p">),</span> <span class="n">area</span> <span class="o">=</span> <span class="nf">as.numeric</span><span class="p">(</span><span class="n">area</span><span class="p">))</span> <span class="o">%&gt;%</span> <span class="c1">#Wrangling data and selecting columns to be used in prediction</span>
     <span class="nf">filter</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">wind</span><span class="p">)</span> <span class="o">|</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">area</span><span class="p">))</span>
@@ -567,61 +431,65 @@ For our project we aim to put the literature to the test and see just how powerf
 </div></div>
 </div>
 </section>
-</section>
 <section id="wind-speed-distributions">
 <h2>Wind Speed Distributions<a class="headerlink" href="#wind-speed-distributions" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
+
+<span class="c1">## Plotting out the distribution of the wind speeds from the data</span>
 <span class="n">wind_speed_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
     <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">wind</span><span class="p">))</span><span class="o">+</span>
     <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span> <span class="o">+</span> 
     <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Wind Speed (km/h)&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
     <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 1: Wind Speed Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Month of Fires&quot;</span><span class="p">)</span><span class="o">+</span>
-    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span> 
+    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">11</span><span class="p">))</span> 
+
 <span class="n">wind_speed_plot</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/proposal_8_0.png" src="../_images/proposal_8_0.png" />
+<img alt="../_images/2-Preliminary_Results_5_0.png" src="../_images/2-Preliminary_Results_5_0.png" />
 </div>
 </div>
-<p>Based on figure 1, wind speed is almost a bimodal distribution (without much modification), we can safely assume that we can categorize wind speed into “high” and “low”.</p>
+<p>In Figure 1 we can see that the distribution follows a bimodal distribution. This allows us to use the two peaks as reference as to whether or not any particular windspeed should be classified as either “high” speed or “low” speed.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">xs</span> <span class="o">&lt;-</span> <span class="nf">quantile</span><span class="p">(</span><span class="n">forest_fires_data</span><span class="o">$</span><span class="n">wind</span><span class="p">,</span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">1</span><span class="o">/</span><span class="m">2</span><span class="p">,</span><span class="m">1</span><span class="p">))</span>
 
-<span class="c1"># add category column</span>
+<span class="c1">## adding the category column</span>
 <span class="n">forest_fires_data</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
     <span class="nf">mutate</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="nf">cut</span><span class="p">(</span><span class="n">wind</span><span class="p">,</span> <span class="n">breaks</span><span class="o">=</span><span class="n">xs</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;low&quot;</span><span class="p">,</span><span class="s">&quot;high&quot;</span><span class="p">),</span><span class="n">include.lowest</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span>
 
+<span class="c1">## visualizing the split between &quot;high&quot; and &quot;low&quot; windspeed</span>
 <span class="n">wind_plot_categorized</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">wind</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span><span class="o">+</span>
+    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">wind</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span><span class="o">+</span>
     <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Wind Speed&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
+    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Wind Speed&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
     <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 2: Wind Speed Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Wind Speed Category&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span> <span class="o">+</span> 
     <span class="nf">geom_vline</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">xintercept</span> <span class="o">=</span> <span class="nf">quantile</span><span class="p">(</span><span class="n">wind</span><span class="p">)[</span><span class="m">3</span><span class="p">]))</span>
 
+<span class="c1">## creating boxplot for &quot;high&quot; and &quot;low&quot; windspeeds distributions</span>
 <span class="n">box_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
   <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">category</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">wind</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span> <span class="o">+</span>
   <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
   <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Wind Speed Category&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Wind Speed&quot;</span><span class="p">)</span> <span class="o">+</span>
   <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 3: Boxplot of Wind Speed by Category&quot;</span><span class="p">)</span> 
 
-<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">12</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">11</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 <span class="nf">plot_grid</span><span class="p">(</span><span class="n">wind_plot_categorized</span><span class="p">,</span> <span class="n">box_plot</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/proposal_10_0.png" src="../_images/proposal_10_0.png" />
+<img alt="../_images/2-Preliminary_Results_7_0.png" src="../_images/2-Preliminary_Results_7_0.png" />
 </div>
 </div>
-<p>Based on Figure 3, there is a considerable difference in wind speed. A confidence interval would be useful to see if their ranges overlap in a interesting manner. We could also have a confidence interval around the difference of the mean.</p>
+<p>Figure 2 simply visualizes how the high-low split looks like. Figure 3 is reiterating the same information but with a box plot instead. Due to the manner by which we deriaved the high and low catagories, there’s no overlap between the two of them.</p>
 </section>
 <section id="area-burned-distributions">
 <h2>Area Burned Distributions<a class="headerlink" href="#area-burned-distributions" title="Permalink to this headline">#</a></h2>
@@ -629,29 +497,30 @@ For our project we aim to put the literature to the test and see just how powerf
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 
-<span class="c1">#Visualizing the distribution of each variable</span>
+<span class="c1">## Plotting the distribution of area burned from data</span>
 <span class="n">area_burned_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
-    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">area</span><span class="p">))</span><span class="o">+</span>
+    <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">area</span><span class="p">))</span><span class="o">+</span>
     <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">10</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Area Burned (ha)&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
+    <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Area Burned (ha)&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Count&quot;</span><span class="p">)</span><span class="o">+</span>
     <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 4: Area Burned Distribution&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Month of Fires&quot;</span><span class="p">)</span><span class="o">+</span>
-    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span>
+    <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">11</span><span class="p">))</span>
 <span class="n">area_burned_plot</span>   
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/proposal_13_0.png" src="../_images/proposal_13_0.png" />
+<img alt="../_images/2-Preliminary_Results_10_0.png" src="../_images/2-Preliminary_Results_10_0.png" />
 </div>
 </div>
-<p>Figure 4 shows that it make sense to scale the data in a logrithmic scale.</p>
+<p>Figure 4 shows a massive right skew in the data. This structure means that it would make sense to scale the data using a logrithmic scale.</p>
 <blockquote>
 <div><p>See <a class="reference external" href="https://www.programmingr.com/tutorial/log-in-r/">https://www.programmingr.com/tutorial/log-in-r/</a>.</p>
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">forest_fires_data</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">## Adding log scale column </span>
+<span class="n">forest_fires_data</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
     <span class="nf">mutate</span><span class="p">(</span><span class="n">area_log10</span> <span class="o">=</span> <span class="nf">log10</span><span class="p">(</span><span class="m">1</span><span class="o">+</span> <span class="n">area</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -661,6 +530,7 @@ For our project we aim to put the literature to the test and see just how powerf
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 
+<span class="c1">## Plotting area burned distribution with the newly scaled data</span>
 <span class="n">area_burned_scaled_plot</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
     <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">area_log10</span><span class="p">))</span><span class="o">+</span>
     <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span> 
@@ -669,30 +539,58 @@ For our project we aim to put the literature to the test and see just how powerf
     <span class="nf">scale_fill_discrete</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Month of Fires&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">12</span><span class="p">))</span>
 
+<span class="c1">## Plotting boxplot of area burned with respect to which wind speed catagory the observation belongs to</span>
 <span class="n">box_plot_burned</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
   <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">category</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">area_log10</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span> <span class="o">+</span>
   <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
   <span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&quot;Scaled Area vs Wind Speed Category&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&quot;Scaled Area Burned (ha)&quot;</span><span class="p">)</span><span class="o">+</span>
   <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 6: Boxplot of Area Burned by Category&quot;</span><span class="p">)</span>
 
-<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">12</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
-<span class="nf">plot_grid</span><span class="p">(</span><span class="n">area_burned_scaled_plot</span><span class="p">,</span> <span class="n">box_plot_burned</span><span class="p">)</span>
+<span class="n">area_burned_scaled_plot</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/proposal_16_0.png" src="../_images/proposal_16_0.png" />
+<img alt="../_images/2-Preliminary_Results_13_0.png" src="../_images/2-Preliminary_Results_13_0.png" />
 </div>
 </div>
-<section id="table-2-summary-statistics-of-forest-fires-data">
-<h3>Table 2: Summary Statistics of Forest Fires Data<a class="headerlink" href="#table-2-summary-statistics-of-forest-fires-data" title="Permalink to this headline">#</a></h3>
+<p>Figure 5 is the newly scaled distribution for the area burned. We can see that it still follows a similar shape as before, but it’s a bit easier to see what’s actually going on.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">## Plotting boxplot of area burned with respect to which wind speed catagory the observation belongs to</span>
+<span class="n">box_plot_burned_unscaled</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
+  <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">category</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">area</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Unscaled Area vs Wind Speed Category&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Area Burned (ha)&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 6: Unscaled Area Burned by Category&quot;</span><span class="p">)</span>
+
+<span class="c1">## Plotting boxplot of area burned [scaled] with respect to which wind speed catagory the observation belongs to</span>
+<span class="n">box_plot_burned_scaled</span> <span class="o">&lt;-</span> <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
+  <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">category</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">area_log10</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">category</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Scaled Area vs Wind Speed Category&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Scaled Area Burned (ha)&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&quot;Figure 7: Scaled Area Burned by Category&quot;</span><span class="p">)</span>
+
+
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">11</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
+<span class="nf">plot_grid</span><span class="p">(</span><span class="n">box_plot_burned_unscaled</span><span class="p">,</span> <span class="n">box_plot_burned_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2-Preliminary_Results_15_0.png" src="../_images/2-Preliminary_Results_15_0.png" />
+</div>
+</div>
+<p>Figure 6 and 7 show the unscaled and scaled area burned distributions under both wind catagories. We can see here that the two catagories actually have very similar distributions, with a slighly higher variance in “high” wind speed catagory compared to the “low” wind speed catagory.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">## Creating summary statistic for &quot;low&quot; wind speed catagory</span>
+<span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
 <span class="nf">group_by</span><span class="p">(</span><span class="n">category</span><span class="p">)</span> <span class="o">%&gt;%</span>
 <span class="nf">filter</span><span class="p">(</span><span class="n">category</span> <span class="o">==</span> <span class="s">&quot;low&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
 <span class="nf">summary</span><span class="p">()</span>
 
+<span class="c1">## Creating summary statistic for &quot;high&quot; wind speed catagory</span>
 <span class="n">forest_fires_data</span> <span class="o">%&gt;%</span>
 <span class="nf">group_by</span><span class="p">(</span><span class="n">category</span><span class="p">)</span> <span class="o">%&gt;%</span>
 <span class="nf">filter</span><span class="p">(</span><span class="n">category</span> <span class="o">==</span> <span class="s">&quot;high&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
@@ -721,60 +619,8 @@ For our project we aim to put the literature to the test and see just how powerf
 </div>
 </div>
 </div>
+<p>Most of these stats for the wind are what you would expect to see given how we split that data to create the catagories. The area of interest here is how the catgory differences are reflected in the area and area_log 10 columns. We can see here that most of the statistic are pretty similar, with even the MAX on the “low” catagory having a significantly higher MAX than the “high” catagory (which is pretty suprising), but that the “high” catagory still has a higher MEAN (though the difference is pretty small).</p>
 </section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="method-plan">
-<h1>Method Plan<a class="headerlink" href="#method-plan" title="Permalink to this headline">#</a></h1>
-<p>The methods used to generate this report can be considered trustworthy based on:</p>
-<ul class="simple">
-<li><p>The data is coming from a peer reviewed research that is publicly available.</p></li>
-<li><p>the dataset is quite large, encompassing over 500 data points</p></li>
-<li><p>All the N/A values are removed from the dataset and the response variable is transformed using a log function to have a less skewed distribution.</p>
-<ul>
-<li><p>to account for the data points where the area burned was 0, we uniformly added 1 to every data point so that the differences between the data points were retained</p></li>
-</ul>
-</li>
-</ul>
-<p>In relation to research question, our null hypothesis states that we will not see a difference in the area burned between the two wind speed categories.</p>
-<section id="is-it-enough">
-<h2>Is it enough?<a class="headerlink" href="#is-it-enough" title="Permalink to this headline">#</a></h2>
-<p>The preliminary results seen seem to suggest that there may not be a considerable difference in average area burned when wind is categorized as high or low.</p>
-<p>However, the plots we produced are not enough to come to a conclusion because we do not know how significant the differences in the area burned really is. To be able to come to a conclusion whether or not the wind speed has an effect on the area burned, we need to first see evidence that the data is statistically unlikely under the null hypothesis, therefore allowing us to reject it.</p>
-</section>
-<section id="plan-for-further-research">
-<h2>Plan for Further Research<a class="headerlink" href="#plan-for-further-research" title="Permalink to this headline">#</a></h2>
-<p>Our plan is to include:</p>
-<ul class="simple">
-<li><p>hypothesis test around the difference in means of area burned across the two wind categories</p></li>
-<li><p>a confidence interval around this difference in means</p></li>
-<li><p>a bootstrap distribution pulled from our sample data</p>
-<ul>
-<li><p>which could be used to produce that confidence interval</p></li>
-</ul>
-</li>
-<li><p>calculate the p-value to find it’s likelyhood under the null hypothesis</p></li>
-<li><p>the t-value and compare it to the sample’s t-distribution</p></li>
-</ul>
-</section>
-<section id="expectations">
-<h2>Expectations<a class="headerlink" href="#expectations" title="Permalink to this headline">#</a></h2>
-<p>From eyeballing the preliminary results, we don’t expect to find a significant difference in averages of the area burned between the two categories. These results might suggest that the wind speed isn’t as important to track for predicting the severity of wildfires (at least in Portugal). However, it might also point for a need for more comprehensive data, or a data set that spans over a longer period of time, or that our model needs to account for more properties about the wind’s behaviour outside of the wind speed.</p>
-<section id="reflection">
-<h3>Reflection<a class="headerlink" href="#reflection" title="Permalink to this headline">#</a></h3>
-<p>The results from this project could signify to bodies that care about wildfires that wind speed isn’t enough to be able to predict the severity of future wild fires (the dependency on this single variable is dangerous), and that there needs to be more investment in finding a property that better fits their area.</p>
-</section>
-<section id="more-research-needed">
-<h3>More Research Needed<a class="headerlink" href="#more-research-needed" title="Permalink to this headline">#</a></h3>
-<p>Is it understandable that wind speed is a relatively easy attribute to measure for wind, thus an attractive variable to depend upon for simplistic models.</p>
-<p>Our research could point for the need for new comprehensive methods of measuring other wind properties, which presumably would be better at predicting area burned. It could also raise questions as to whether or not the wind speed is truly one of the most significant factors for accurate predictive models, or whether the forest environment has other behaviours that contribute significantly to the severity of these events.</p>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h1>
-<p>[1] General Winds | NWCG. (n.d.). Retrieved November 4, 2022, from <a class="reference external" href="https://www.nwcg.gov/publications/pms425-1/general-winds">https://www.nwcg.gov/publications/pms425-1/general-winds</a></p>
-<p>[2] Cruz, M. G. (2019, April 25). The 10% wind speed rule of thumb for estimating a wildfire’s forward rate of spread in forests and shrublands - Annals of Forest Science. BioMed Central. <a class="reference external" href="https://annforsci.biomedcentral.com/articles/10.1007/s13595-019-0829-8">https://annforsci.biomedcentral.com/articles/10.1007/s13595-019-0829-8</a></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -790,7 +636,7 @@ For our project we aim to put the literature to the test and see just how powerf
         },
         kernelOptions: {
             kernelName: "ir",
-            path: "./submit-ables"
+            path: "./src"
         },
         predefinedOutput: true
     }
@@ -804,6 +650,20 @@ For our project we aim to put the literature to the test and see just how powerf
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="1-Introduction.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Proposal</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Work_Referenced.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Works Referenced</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

@@ -1,5 +1,0 @@
-# Works Referenced
-
-```{bibliography}
-:all:
-```
