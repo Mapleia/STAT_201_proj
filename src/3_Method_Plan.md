@@ -1,10 +1,13 @@
 # Method Plan
 
-The methods used to generate this report can be considered trustworthy based on:
-- The data is coming from a peer reviewed research that is publicly available.
-- the dataset is quite large, encompassing over 500 data points
-- All the N/A values are removed from the dataset and the response variable is transformed using a log function to have a less skewed distribution.
-    - to account for the data points where the area burned was 0, we uniformly added 1 to every data point so that the differences between the data points were retained
+We trust our methods based on the following factors:
+- The dataset is of acceptable quality
+    - The data is coming from peer-reviewed research that is publicly available.
+    - The dataset is quite large, encompassing over 500 data points
+- We have cleaned and wrangled the data
+    - All the N/A values are removed from the dataset and the response variable is transformed using a log function to have a less skewed distribution.
+    - To account for the data points where the area burned was 0, we uniformly added 1 to every data point so that the differences between the data points were retained
+
 
 In relation to the research question, our null hypothesis states that we will not see a difference in the area burned between the two wind speed categories.
 
@@ -22,7 +25,7 @@ Our plan is to:
 
 ### Expectations
 
-At first glance, the preliminary results don't seem to suggest a strong relationship between area burned and wind speed. This could suggest that wind speed is not as important of a factor as the prior research lead us to believe, but it could also be a symptom of some flaw in our approach. It could very well be the case that our catagorization of the wind speed was too arbitrary and that we needed a more definitive metric to define "high" and "low".
+At first glance, the preliminary results don't seem to suggest a strong relationship between area burned and wind speed. This could suggest that wind speed is not as important of a factor as the prior research led us to believe, but it could also be a symptom of some flaw in our approach. It could very well be the case that our categorisation of the wind speed was too arbitrary and that we needed a more definitive metric to define "high" and "low".
 
 ### More Research Needed
 
