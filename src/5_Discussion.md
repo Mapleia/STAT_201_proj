@@ -1,6 +1,6 @@
 # Discussion
 
-We used a simulation based approach to calculate a 95% confidence interval of between -0.143 and 0.0766 [UNITS HERE]. Even considering that we scaled the data by log base 10, this is still a pretty small interval in the context of [UNITS HERE] area burned. This suggests that there was relatively little variation between the bootstrap samples and that we had a sufficiently large dataset to produce such a narrow interval. 
+We used a simulation based approach to calculate a 95% confidence interval of between -0.143 and 0.0766 Hectare. Even considering that we scaled the data by log base 10, this is still a pretty small interval in the context of Hectare area burned (a Hectare is 100 meters by 100 meters). This suggests that there was relatively little variation between the bootstrap samples and that we had a sufficiently large dataset to produce such a narrow interval. 
 
 Continuing to the hypothesis tests we can see that we produced the p values of 0.578 and 0.579 for the simulation and theory based approaches respectively. This means that under our null model, we would have a probability of 0.578/0.579 of seeing a statistic equal or more extreme than our observed statistic of -0.0301. These very large p values would thus lead us to not reject the null hypothesis that the two wind speed categories had equal average areas burned. 
 
